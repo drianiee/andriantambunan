@@ -1,12 +1,39 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 export function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+    const updateCursorAvailability = () => {
+      setEnabled(mediaQuery.matches);
+    };
+
+    updateCursorAvailability();
+
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener("change", updateCursorAvailability);
+    } else {
+      mediaQuery.addListener(updateCursorAvailability);
+    }
+
+    return () => {
+      if (mediaQuery.removeEventListener) {
+        mediaQuery.removeEventListener("change", updateCursorAvailability);
+      } else {
+        mediaQuery.removeListener(updateCursorAvailability);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!enabled || !cursorRef.current) return;
+
     const move = (e: MouseEvent) => {
       if (!cursorRef.current) return;
 
@@ -20,6 +47,7 @@ export function CustomCursor() {
 
     const enterInteractive = () => {
       if (!cursorRef.current) return;
+
       gsap.to(cursorRef.current, {
         scale: 2.2,
         opacity: 1,
@@ -30,6 +58,7 @@ export function CustomCursor() {
 
     const leaveInteractive = () => {
       if (!cursorRef.current) return;
+
       gsap.to(cursorRef.current, {
         scale: 1,
         opacity: 0.9,
@@ -53,7 +82,9 @@ export function CustomCursor() {
         el.removeEventListener("mouseleave", leaveInteractive);
       });
     };
-  }, []);
+  }, [enabled]);
+
+  if (!enabled) return null;
 
   return (
     <div
