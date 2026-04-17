@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "UI/UX Collaboration with Medical Staff",
       "Clinical Workflow System",
     ],
-    link: "https://example.com/hospital",
+    link: "https://synergy.syamrabu.com/",
     screenshots: [
       "/projects/hospital-1.png",
       "/projects/hospital-2.png",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     purpose:
       "Academic testing platform integrated with Moodle and payment system for large-scale assessments.",
     role: ["Fullstack Developer", "UI/UX Designer", "Next.js Implementation"],
-    link: "https://example.com/tpka",
+    link: "https://tpka.its.ac.id/",
     screenshots: [
       "/projects/tpka-1.png",
       "/projects/tpka-2.png",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     purpose:
       "A CMS-powered creative agency website using headless CMS for dynamic content management.",
     role: ["Frontend Developer", "UI/UX Designer", "CMS Integration"],
-    link: "https://example.com/kano",
+    link: "https://kanocreative.com/",
     screenshots: [
       "/projects/kano-1.png",
       "/projects/kano-2.png",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     purpose:
       "Platform to support certification process for 10,000+ palm oil farmers.",
     role: ["Frontend Developer", "System Interface"],
-    link: "https://example.com/ispo",
+    link: "https://isporakyat.id/",
     screenshots: [
       "/projects/ispo-1.png",
       "/projects/ispo-2.png",
