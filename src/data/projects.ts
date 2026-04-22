@@ -1,3 +1,8 @@
+export type ProjectTechStack = {
+  name: string;
+  icon?: string;
+};
+
 export type Project = {
   title: string;
   category: string;
@@ -5,6 +10,7 @@ export type Project = {
   year: string;
   purpose: string;
   role: string[];
+  techStack: ProjectTechStack[];
   link?: string;
   screenshots: string[];
 };
@@ -18,6 +24,10 @@ export const projects: Project[] = [
     purpose:
       "A premium coffee brand website focused on aesthetic layout and GSAP animation.",
     role: ["Frontend Developer", "Web Designer", "GSAP Animation"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "GSAP", icon: "/projects/logos/gsap.png" },
+    ],
     link: "https://kophi.vercel.app/",
     screenshots: [
       "/projects/kophi-1.png",
@@ -34,6 +44,10 @@ export const projects: Project[] = [
     purpose:
       "Luxury apartment website focusing on elegant presentation and spatial layout.",
     role: ["Frontend Developer", "UI Design"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "GSAP", icon: "/projects/logos/gsap.png" },
+    ],
     link: "https://harbour-eight-pi.vercel.app/",
     screenshots: [
       "/projects/harbour-1.png",
@@ -41,6 +55,7 @@ export const projects: Project[] = [
       "/projects/harbour-3.png",
     ],
   },
+
   {
     title: "Synergy Hospital System",
     category: "Healthcare System",
@@ -52,6 +67,10 @@ export const projects: Project[] = [
       "Frontend Developer",
       "UI/UX Collaboration with Medical Staff",
       "Clinical Workflow System",
+    ],
+    techStack: [
+      { name: "React.js", icon: "/projects/logos/react.svg" },
+      { name: "Tailwind CSS", icon: "/projects/logos/tailwind.svg" },
     ],
     link: "https://synergy.syamrabu.com/",
     screenshots: [
@@ -69,6 +88,14 @@ export const projects: Project[] = [
     purpose:
       "Academic testing platform integrated with Moodle and payment system for large-scale assessments.",
     role: ["Fullstack Developer", "UI/UX Designer", "Next.js Implementation"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "Laravel", icon: "/projects/logos/laravel.svg" },
+      { name: "MySQL", icon: "/projects/logos/mysql.svg" },
+      { name: "Moodle", icon: "/projects/logos/moodle.svg" },
+      { name: "Tailwind CSS", icon: "/projects/logos/tailwind.svg" },
+
+    ],
     link: "https://tpka.its.ac.id/",
     screenshots: [
       "/projects/tpka-1.png",
@@ -85,6 +112,11 @@ export const projects: Project[] = [
     purpose:
       "A CMS-powered creative agency website using headless CMS for dynamic content management.",
     role: ["Frontend Developer", "UI/UX Designer", "CMS Integration"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "Sanity", icon: "/projects/logos/sanity.svg" },
+      { name: "GSAP", icon: "/projects/logos/gsap.png" },
+    ],
     link: "https://kanocreative.com/",
     screenshots: [
       "/projects/kano-1.png",
@@ -101,6 +133,10 @@ export const projects: Project[] = [
     purpose:
       "Platform to support certification process for 10,000+ palm oil farmers.",
     role: ["Frontend Developer", "System Interface"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "Tailwind CSS", icon: "/projects/logos/tailwind.svg" },
+    ],
     link: "https://isporakyat.id/",
     screenshots: [
       "/projects/ispo-1.png",
