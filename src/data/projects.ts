@@ -23,7 +23,7 @@ export const projects: Project[] = [
     year: "2026",
     purpose:
       "A premium coffee brand website focused on aesthetic layout and GSAP animation.",
-    role: ["Frontend Developer", "Web Designer", "GSAP Animation"],
+    role: ["Frontend Developer", "UI/UX Designer"],
     techStack: [
       { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
       { name: "GSAP", icon: "/projects/logos/gsap.png" },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     year: "2026",
     purpose:
       "Luxury apartment website focusing on elegant presentation and spatial layout.",
-    role: ["Frontend Developer", "UI Design"],
+    role: ["Frontend Developer", "UI/UX Designer"],
     techStack: [
       { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
       { name: "GSAP", icon: "/projects/logos/gsap.png" },
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       "A web-based clinical information system used daily by doctors and nurses to manage patient care workflows including diagnosis, laboratory, pharmacy, and patient records.",
     role: [
       "Frontend Developer",
-      "UI/UX Collaboration with Medical Staff",
+      "UI/UX Designer in Collaboration with Medical Staff",
       "Clinical Workflow System",
     ],
     techStack: [
@@ -87,14 +87,13 @@ export const projects: Project[] = [
     year: "2025",
     purpose:
       "Academic testing platform integrated with Moodle and payment system for large-scale assessments.",
-    role: ["Fullstack Developer", "UI/UX Designer", "Next.js Implementation"],
+    role: ["Fullstack Developer", "UI/UX Designer"],
     techStack: [
       { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
       { name: "Laravel", icon: "/projects/logos/laravel.svg" },
       { name: "MySQL", icon: "/projects/logos/mysql.svg" },
       { name: "Moodle", icon: "/projects/logos/moodle.svg" },
       { name: "Tailwind CSS", icon: "/projects/logos/tailwind.svg" },
-
     ],
     link: "https://tpka.its.ac.id/",
     screenshots: [
@@ -105,7 +104,7 @@ export const projects: Project[] = [
   },
 
   {
-    title: "KANŌ's Portfolio",
+    title: "KANŌ's Portfolio V2",
     category: "Brand Website",
     client: "KANŌ Creative Agency",
     year: "2026",
@@ -117,11 +116,11 @@ export const projects: Project[] = [
       { name: "Sanity", icon: "/projects/logos/sanity.svg" },
       { name: "GSAP", icon: "/projects/logos/gsap.png" },
     ],
-    link: "https://kanocreative.com/",
+    link: "https://kano-steel.vercel.app/",
     screenshots: [
-      "/projects/kano-1.png",
-      "/projects/kano-2.png",
-      "/projects/kano-3.png",
+      "/projects/kano2-1.png",
+      "/projects/kano2-2.png",
+      "/projects/kano2-3.png",
     ],
   },
 
@@ -132,7 +131,7 @@ export const projects: Project[] = [
     year: "2025",
     purpose:
       "Platform to support certification process for 10,000+ palm oil farmers.",
-    role: ["Frontend Developer", "System Interface"],
+    role: ["Frontend Developer", "UI/UX Designer"],
     techStack: [
       { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
       { name: "Tailwind CSS", icon: "/projects/logos/tailwind.svg" },
@@ -142,6 +141,25 @@ export const projects: Project[] = [
       "/projects/ispo-1.png",
       "/projects/ispo-2.png",
       "/projects/ispo-3.png",
+    ],
+  },
+  {
+    title: "KANŌ's Portfolio",
+    category: "Brand Website",
+    client: "KANŌ Creative Agency",
+    year: "2026",
+    purpose:
+      "A CMS-powered creative agency website using headless CMS for dynamic content management.",
+    role: ["Frontend Developer", "UI/UX Designer"],
+    techStack: [
+      { name: "Next.js", icon: "/projects/logos/nextjs.svg" },
+      { name: "Sanity", icon: "/projects/logos/sanity.svg" },
+    ],
+    link: "https://kanocreative.com/",
+    screenshots: [
+      "/projects/kano-1.png",
+      "/projects/kano-2.png",
+      "/projects/kano-3.png",
     ],
   },
 ];
